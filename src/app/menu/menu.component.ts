@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  menuOpen = false;
 
-  constructor() { }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
+  }
+  onMenuClick() {
+    this.menuOpen = !this.menuOpen;
+    if (this.menuOpen) {
+      this.renderer.addClass(document.body, 'blur');
+    } else {
+      this.renderer.removeClass(document.body, 'blur');
+    }
   }
 
 }

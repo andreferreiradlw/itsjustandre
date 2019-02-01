@@ -1,0 +1,24 @@
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+#main {
+  width: 100%;
+  counter-reset: section 0;
+  margin: 0px auto;
+  padding: 0px 150px;
+}
+#content > .section {
+  max-width: 1000px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0px auto;
+  padding: 150px 0px;
+}

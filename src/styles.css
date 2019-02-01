@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700');
+html {
+  box-sizing: border-box;
+  width: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Oswald', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+}
+.blur main {
+  overflow: hidden;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}

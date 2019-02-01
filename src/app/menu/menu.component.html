@@ -1,3 +1,38 @@
-<p>
-  menu works!
-</p>
+<header>
+  <nav>
+    <div class="header-logo">
+      SVG Logo
+    </div>
+    <div>
+      <div class="header-burger" (click)="onMenuClick()">
+        <div class="header-burger-box">
+          <div class="header-burger-inner" [ngClass]="menuOpen ? 'open' : 'closed'"></div>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav-links">
+      <ol class="header-nav-list">
+        <div>
+          <li class="header-nav-list-item">
+            <a href="#about" class="header-nav-link">About</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#experience" class="header-nav-link">Experience</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#projects" class="header-nav-link">Projects</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#contact" class="header-nav-link">Contact</a>
+          </li>
+        </div>
+      </ol>
+      <div>
+        <div class="resume-button">
+          <a href="../../assets/andre_ferreira_resume.pdf" target="_blank" rel="nofollow noopener noreferrer">Resume</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="slider-menu-container"></div>
+</header>
