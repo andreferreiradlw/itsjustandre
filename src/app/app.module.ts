@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -24,7 +26,9 @@ import { FooterComponent } from './footer/footer.component';
       FooterComponent
    ],
    imports: [
-      BrowserModule
+      BrowserModule,
+      BrowserAnimationsModule,
+      ScrollToModule.forRoot()
    ],
    providers: [],
    bootstrap: [

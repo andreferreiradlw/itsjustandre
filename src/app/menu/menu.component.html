@@ -4,7 +4,7 @@
       SVG Logo
     </div>
     <div>
-      <div class="header-burger" (click)="onMenuClick()">
+      <div class="header-burger" (click)="onBurgerClick()">
         <div class="header-burger-box">
           <div class="header-burger-inner" [ngClass]="menuOpen ? 'open' : 'closed'"></div>
         </div>
@@ -14,16 +14,16 @@
       <ol class="header-nav-list">
         <div>
           <li class="header-nav-list-item">
-            <a href="#about" class="header-nav-link">About</a>
+            <a (click)="onMenuOptionClick('about')" class="header-nav-link">About</a>
           </li>
           <li class="header-nav-list-item">
-            <a href="#experience" class="header-nav-link">Experience</a>
+            <a (click)="onMenuOptionClick('experience')" class="header-nav-link">Experience</a>
           </li>
           <li class="header-nav-list-item">
-            <a href="#projects" class="header-nav-link">Projects</a>
+            <a (click)="onMenuOptionClick('projects')" class="header-nav-link">Projects</a>
           </li>
           <li class="header-nav-list-item">
-            <a href="#contact" class="header-nav-link">Contact</a>
+            <a (click)="onMenuOptionClick('contact')" class="header-nav-link">Contact</a>
           </li>
         </div>
       </ol>
@@ -34,5 +34,25 @@
       </div>
     </div>
   </nav>
-  <div class="slider-menu-container"></div>
+  <div class="slider-menu-container" [@slideInOut]="menuOpen">
+    <nav class="slider-menu">
+      <ol class="header-slider-list">
+        <div>
+          <li class="header-slider-list-item">
+            <a class="header-nav-link" (click)="onMenuOptionClick('about')">About</a>
+          </li>
+          <li class="header-slider-list-item">
+            <a class="header-nav-link" (click)="onMenuOptionClick('experience')">Experience</a>
+          </li>
+          <li class="header-slider-list-item">
+            <a class="header-nav-link" (click)="onMenuOptionClick('projects')">Projects</a>
+          </li>
+          <li class="header-slider-list-item">
+            <a class="header-nav-link" (click)="onMenuOptionClick('contact')">Contact</a>
+          </li>
+        </div>
+      </ol>
+      <a class="resume-button" href="../../assets/andre_ferreira_resume.pdf" target="_blank" rel="nofollow noopener noreferrer">Resume</a>
+    </nav>
+  </div>
 </header>

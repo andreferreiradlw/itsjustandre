@@ -17,8 +17,10 @@ body {
   font-family: 'Oswald', sans-serif;
   /*font-family: 'Lato', sans-serif;*/
 }
+.blur {
+  overflow: hidden !important;
+}
 .blur main {
-  overflow: hidden;
   -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
   -o-filter: blur(2px);

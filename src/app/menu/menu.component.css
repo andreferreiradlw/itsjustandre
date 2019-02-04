@@ -9,12 +9,11 @@ header {
   background-color: black;
   z-index: 11;
   width: 100%;
-  height: 70px;
   transform: translateY(0px);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
-  padding: 0px 5%;
+  padding: 10px 5%;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   color: white;
 }
@@ -25,7 +24,6 @@ nav {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  font-family: 'Lato', sans-serif;
   counter-reset: item 0;
   position: relative;
   z-index: 12;
@@ -134,7 +132,8 @@ nav .header-nav-list > div {
 nav .header-nav-list .header-nav-list-item {
   transition-delay: 0ms;
   position: relative;
-  font-size: 13px;
+  font-size: 16px;
+  text-transform: uppercase;
   counter-increment: item 1;
   margin: 0px 10px;
 }
@@ -143,6 +142,7 @@ nav .header-nav-list .header-nav-list-item::before {
   text-align: right;
   color: rgb(100, 255, 218);
   font-size: 12px;
+  font-family: 'Lato', sans-serif;
 }
 nav .header-nav-list .header-nav-list-item > a {
   display: inline-block;
@@ -163,7 +163,7 @@ nav .resume-button > a {
   line-height: 1;
   cursor: pointer;
   margin-left: 10px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   border-width: 1px;
   border-style: solid;
@@ -186,17 +186,82 @@ header .slider-menu-container {
   top: 0px;
   bottom: 0px;
   right: 0px;
-  width: 100%;
   height: 100vh;
   z-index: 10;
-  transform: translateX(100vw);
   visibility: hidden;
   display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   outline: 0px;
+  background-color: rgba(0, 0, 0, 0.85);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
+.slider-menu-container .slider-menu {
+  width: 100%;
+  color: white;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.header-slider-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  width: 100%;
+}
+.header-slider-list .header-slider-list-item {
+  position: relative;
+  font-size: 20px;
+  counter-increment: item 1;
+  margin: 0px auto 20px;
+}
+.header-slider-list .header-slider-list-item::before {
+  display: block;
+  content: "0" counter(item) ".";
+  color: rgb(100, 255, 218);
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.header-slider-list .header-slider-list-item a {
+  display: inline-block;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  padding: 3px 20px 20px;
+}
+.slider-menu .resume-button {
+  color: rgb(100, 255, 218);
+  background-color: transparent;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  width: max-content;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(100, 255, 218);
+  border-image: initial;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  padding: 18px 50px;
+}
+.slider-menu .resume-button:hover {
+  color: black;
+  background-color: rgb(100, 255, 218);
+}
 /*MEDIA SCREENS*/
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   nav .header-burger {
     display: flex;
   }
@@ -204,7 +269,12 @@ header .slider-menu-container {
     display: none;
   }
   header .slider-menu-container {
-    display: block;
+    display: flex;
+    visibility: visible;
+    width: 100%;
+  }
+  .header-slider-list .header-slider-list-item a {
+    padding: 0 0 5px;
   }
 }
 
@@ -216,7 +286,9 @@ header .slider-menu-container {
     display: none;
   }
   header .slider-menu-container {
-    display: block;
+    display: flex;
+    visibility: visible;
+    width: 60%;
   }
 }
 
