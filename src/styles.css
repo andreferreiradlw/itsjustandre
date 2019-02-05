@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   min-height: 100%;
+  font-size: 18px;
   margin: 0;
   background-color: white;
   -webkit-font-smoothing: antialiased;
@@ -26,6 +27,11 @@ a {
   text-decoration: none;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
+ul, ol {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
 .blur {
   overflow: hidden !important;
 }
@@ -35,4 +41,10 @@ a {
   -o-filter: blur(2px);
   -ms-filter: blur(2px);
   filter: blur(2px);
+}
+
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 18px;
+  }
 }
