@@ -16,12 +16,12 @@ h3::before {
   color: rgb(152, 127, 209);
   font-size: 20px;
   position: relative;
-  bottom: 4px;
+  bottom: -5px;
 }
 h3::after {
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   width: 300px;
   background-color: rgb(152, 127, 209);
   position: relative;
@@ -111,10 +111,17 @@ h3::after {
   border-radius: 5px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
+.about-avatar-container:hover::before {
+  top: 3%;
+  left: 3%;
+}
 .about-avatar {
   filter: grayscale(100%) contrast(1);
   border-radius: 5px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.about-avatar:hover {
+  filter: none;
 }
 .about-avatar img {
   position: absolute;
@@ -126,20 +133,13 @@ h3::after {
   object-position: center center;
   border-radius: 5px;
 }
-.about-avatar:hover {
-  filter: none;
-}
-.about-avatar-container:hover::before {
-  top: 3%;
-  left: 3%;
-}
-
-
-
-
 
 /*MEDIA SCREENS*/
 @media only screen and (max-width: 479px) {
+  :host {
+    padding-top: 80px !important;
+    padding-bottom: 60px !important;
+  }
   h3 {
     font-size: 18px;
   }
