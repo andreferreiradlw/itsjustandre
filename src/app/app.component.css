@@ -4,13 +4,19 @@
   grid-template-rows: 1fr auto;
   grid-template-columns: 100%;
 }
+.container .hero {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
 .container main {
   width: 100%;
   counter-reset: section 0;
   margin: 0px auto;
-  padding: 0px 25px;
 }
-#content > .section {
+.section {
   max-width: 1000px;
   display: flex;
   -webkit-box-pack: center;
@@ -20,7 +26,7 @@
   align-items: flex-start;
   min-height: 100vh;
   margin: 0px auto;
-  padding: 150px 0px;
+  padding: 0px 25px;
 }
 /*MEDIA SCREENS*/
 @media only screen and (max-width: 479px) {
@@ -30,19 +36,19 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .container main {
+  .section {
     padding: 0px 50px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .container main {
+  .section {
     padding: 0px 100px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .container main {
+  .section {
     padding: 0px 150px;
   }
 }

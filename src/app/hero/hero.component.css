@@ -1,0 +1,96 @@
+:host {
+  background-color: black;
+  color: white;
+}
+h5 {
+  color: rgb(203, 185, 245);
+  font-size: 16px;
+  margin: 0px 0px 20px 3px;
+  font-family: 'Lato', sans-serif;
+
+}
+h1 {
+  font-size: 80px;
+  line-height: 1.1;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+h2 {
+  color: rgb(203, 185, 245);
+  font-size: 65px;
+  line-height: 1.1;
+  margin: 0px;
+}
+.hero-blurb {
+  width: 100%;
+  margin-top: 25px;
+  max-width: 500px;
+}
+.hero-blurb p {
+  margin: 0px 0px 15px;
+  font-family: 'Lato', sans-serif;
+}
+.hero-button {
+  width: 100%;
+}
+.hero-email {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  line-height: 1;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(152, 127, 209);
+  border-image: initial;
+  border-radius: 2px;
+  padding: 18px 23px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.hero-email:hover {
+  color: black;
+  background-color: rgb(203, 185, 245);
+}
+
+
+
+
+/*MEDIA SCREENS*/
+@media only screen and (max-width: 479px) {}
+
+@media only screen and (max-width: 767px) {
+  h5 {
+    font-size: 13px;
+  }
+  h1, h2 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h5 {
+    font-size: 14px;
+  }
+  h1, h2 {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h5 {
+    font-size: 15px;
+  }
+  h1, h2 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-blurb p {
+    font-size: 18px;
+  }
+}
