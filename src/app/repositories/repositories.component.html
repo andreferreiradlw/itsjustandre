@@ -1,7 +1,7 @@
 <h3 class="heading">Latest Repositories</h3>
 <div class="repos-container">
   <div class="repos-grid">
-    <div class="repo" *ngFor="let repo of repositoryCollection | slice:-6">
+    <div class="repo" *ngFor="let repo of repositoryCollection | slice: 0:6">
       <div class="repo-inner">
         <div>
           <div class="repo-header">
@@ -32,3 +32,4 @@
     </div>
   </div>
 </div>
+<a href="https://github.com/andreferreiradlw?tab=repositories" target="_blank" rel="nofollow noopener noreferrer" class="projects-show">Show More</a>

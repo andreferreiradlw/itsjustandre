@@ -21,7 +21,7 @@ export class RepositoriesComponent implements OnInit {
     this.reposSub = this.githubService.getReposUpdateListener()
       .subscribe( repoData => {
         this.repositoryCollection = repoData.sort((val1: any, val2: any) => {
-          return new Date(val1.created_at) - new Date(val2.created_at);
+          return new Date(val2.created_at) - new Date(val1.created_at);
         });
         // console.log(this.repositoryCollection);
       });
