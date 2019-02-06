@@ -1,0 +1,61 @@
+h3 {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 36px;
+  margin: 10px 0px 40px;
+}
+h3::before {
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  font-weight: normal;
+  color: rgb(111, 111, 252);
+  font-size: 20px;
+  position: relative;
+  bottom: -5px;
+}
+h3::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 300px;
+  background-color: rgb(111, 111, 252);
+  position: relative;
+  top: 5px;
+  margin-left: 20px;
+}
+/*MEDIA SCREENS*/
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+  h3 {
+    font-size: 24px;
+  }
+  h3::before {
+    font-size: 18px;
+  }
+  h3::after {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  :host {
+    padding-top: 80px !important;
+    padding-bottom: 60px !important;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h3::after {
+    margin-left: 10px;
+  }
+}

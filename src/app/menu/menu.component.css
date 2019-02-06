@@ -179,7 +179,6 @@ nav .resume-button > a {
   position: relative;
 }
 nav .resume-button > a:hover {
-  color: black;
   background-color: rgb(111, 111, 252);
 }
 header .slider-menu-container {
@@ -258,6 +257,7 @@ header .slider-menu-container {
   padding: 18px 50px;
 }
 .slider-menu .resume-button:hover {
+  color: white;
   background-color: rgb(111, 111, 252);
 }
 /*MEDIA SCREENS*/
