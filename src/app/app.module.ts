@@ -13,6 +13,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { TabsComponent } from './experience/tabs/tabs.component';
+import { TabComponent } from './experience/tab/tab.component';
+
+
 
 @NgModule({
    declarations: [
@@ -24,7 +28,9 @@ import { FooterComponent } from './footer/footer.component';
       ProjectsComponent,
       RepositoriesComponent,
       ContactComponent,
-      FooterComponent
+      FooterComponent,
+      TabsComponent,
+      TabComponent
    ],
    imports: [
       BrowserModule,

@@ -1,0 +1,12 @@
+<!--
+<ul>
+  <li *ngFor="let tab of tabs" (click)="selectTab(tab)">{{ tab.tabTitle }}</li>
+</ul>
+<ng-content></ng-content>
+-->
+<div class="experience-tabs">
+  <a class="tab" *ngFor="let tab of tabs" (click)="selectTab(tab)">{{ tab.tabTitle }}</a>
+</div>
+<div class="jobs-container">
+  <ng-content></ng-content>
+</div>
