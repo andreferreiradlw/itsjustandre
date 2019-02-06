@@ -18,7 +18,7 @@
   align-items: center;
   white-space: nowrap;
   display: block;
-  color: rgb(152, 127, 209);
+  color: rgb(111, 111, 252);
   font-size: 15px;
   font-weight: normal;
   -webkit-box-pack: center;
@@ -30,7 +30,7 @@
   content: "0" counter(section) ".";
   margin-right: 10px;
   font-weight: 700;
-  color: rgb(152, 127, 209);
+  color: rgb(111, 111, 252);
   font-size: 13px;
 }
 .contact-title {
@@ -42,7 +42,7 @@ p {
   margin: 0px 0px 15px;
 }
 .contact-email {
-  color: rgb(152, 127, 209);
+  color: rgb(111, 111, 252);
   background-color: transparent;
   font-size: 14px;
   font-family: 'Lato', sans-serif;
@@ -51,14 +51,14 @@ p {
   margin-top: 50px;
   border-width: 2px;
   border-style: solid;
-  border-color: rgb(152, 127, 209);
+  border-color: rgb(111, 111, 252);
   border-image: initial;
   border-radius: 2px;
   padding: 16px 23px;
 }
 .contact-email:hover {
   color: white;
-  background-color: rgb(152, 127, 209);
+  background-color: rgb(111, 111, 252);
 }
 app-footer {
   width: 100vw;

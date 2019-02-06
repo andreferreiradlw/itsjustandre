@@ -140,9 +140,10 @@ nav .header-nav-list .header-nav-list-item {
 nav .header-nav-list .header-nav-list-item::before {
   content: "0" counter(item) ".";
   text-align: right;
-  color: rgb(152, 127, 209);
+  color: rgb(111, 111, 252);
   font-size: 12px;
   font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 nav .header-nav-list .header-nav-list-item > a {
   display: inline-block;
@@ -155,7 +156,7 @@ nav .header-nav-list .header-nav-list-item > a {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 nav .header-nav-list .header-nav-list-item > a:hover {
-  color: rgb(152, 127, 209);
+  color: rgb(111, 111, 252);
 }
 nav .resume-button > a {
   color: white;
@@ -167,7 +168,7 @@ nav .resume-button > a {
   font-weight: 700;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(152, 127, 209);
+  border-color: rgb(111, 111, 252);
   border-image: initial;
   border-radius: 2px;
   padding: 12px 17px;
@@ -179,7 +180,7 @@ nav .resume-button > a {
 }
 nav .resume-button > a:hover {
   color: black;
-  background-color: rgb(152, 127, 209);
+  background-color: rgb(111, 111, 252);
 }
 header .slider-menu-container {
   position: fixed;
@@ -223,7 +224,7 @@ header .slider-menu-container {
 .header-slider-list .header-slider-list-item::before {
   display: block;
   content: "0" counter(item) ".";
-  color: rgb(152, 127, 209);
+  color: rgb(111, 111, 252);
   font-size: 15px;
   margin-bottom: 5px;
 }
@@ -239,7 +240,7 @@ header .slider-menu-container {
   padding: 3px 20px 20px;
 }
 .slider-menu .resume-button {
-  color: rgb(152, 127, 209);
+  color: rgb(111, 111, 252);
   background-color: transparent;
   font-size: 18px;
   font-family: 'Lato', sans-serif;
@@ -249,7 +250,7 @@ header .slider-menu-container {
   width: max-content;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(152, 127, 209);
+  border-color: rgb(111, 111, 252);
   border-image: initial;
   border-radius: 2px;
   text-decoration: none;
@@ -258,7 +259,7 @@ header .slider-menu-container {
 }
 .slider-menu .resume-button:hover {
   color: black;
-  background-color: rgb(152, 127, 209);
+  background-color: rgb(111, 111, 252);
 }
 /*MEDIA SCREENS*/
 @media only screen and (max-width: 479px) {

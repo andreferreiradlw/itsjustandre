@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   background-color: black;
-  color: rgb(152, 127, 209);
+  color: rgb(111, 111, 252);
   text-align: center;
   height: auto;
   padding: 15px;
@@ -39,13 +39,13 @@
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .footer-social-link svg:hover {
-  fill: rgb(152, 127, 209);
+  fill: rgb(111, 111, 252);
 }
 p {
   margin: 0 0 5px;
 }
 .footer-link {
-  color: rgb(152, 127, 209);
+  color: rgb(111, 111, 252);
   font-size: 13px;
   font-weight: 700;
 }
