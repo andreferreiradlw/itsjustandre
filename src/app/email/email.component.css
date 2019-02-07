@@ -1,0 +1,57 @@
+:host {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  color: rgb(111, 111, 252);
+}
+:host div {
+  width: 100%;
+  margin: 0px auto;
+}
+.email-container {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+.email-container::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  background-color: rgb(111, 111, 252);
+  margin: 0px auto;
+}
+.email-link {
+  font-size: 12px;
+  letter-spacing: 3.7px;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  margin: 20px auto 0;
+  padding: 10px 10px 10px 14px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1199px) {
+  :host {
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  :host {
+    right: 5px;
+  }
+  .email-container::after {
+    height: 65px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  :host {
+    display: none;
+  }
+
+}

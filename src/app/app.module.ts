@@ -15,6 +15,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { TabsComponent } from './experience/tabs/tabs.component';
 import { TabComponent } from './experience/tab/tab.component';
+import { SocialComponent } from './social/social.component';
+import { EmailComponent } from './email/email.component';
 
 
 
@@ -30,7 +32,9 @@ import { TabComponent } from './experience/tab/tab.component';
       ContactComponent,
       FooterComponent,
       TabsComponent,
-      TabComponent
+      TabComponent,
+      SocialComponent,
+      EmailComponent
    ],
    imports: [
       BrowserModule,

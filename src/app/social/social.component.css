@@ -1,0 +1,53 @@
+:host {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  color: rgb(111, 111, 252);
+}
+.social-item-list {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.social-item-list::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  background-color: rgb(111, 111, 252);
+  margin: 0px auto;
+}
+.social-item-list a {
+  padding: 10px;
+}
+.social-item-list svg {
+  width: 18px;
+  height: 18px;
+  fill: currentcolor;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 1199px) {
+  :host {
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  :host {
+    left: 5px;
+  }
+  .social-item-list::after {
+    height: 65px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  :host {
+    display: none;
+  }
+
+}
+

@@ -101,6 +101,7 @@ h3::after {
   }
   .tabs-container {
     display: block;
+    max-width: 100%;
   }
 }
 

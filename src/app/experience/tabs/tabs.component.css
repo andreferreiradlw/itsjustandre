@@ -69,7 +69,7 @@ ng-content {
   }
   .experience-tabs {
     display: flex;
-    width: 90%;
+    max-width: 100%;
     overflow-x: auto;
   }
   .experience-tabs .tab {
