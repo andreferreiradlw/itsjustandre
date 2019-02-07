@@ -17,6 +17,7 @@ import { TabsComponent } from './experience/tabs/tabs.component';
 import { TabComponent } from './experience/tab/tab.component';
 import { SocialComponent } from './social/social.component';
 import { EmailComponent } from './email/email.component';
+import { LoadingComponent } from './loading/loading.component';
 
 
 
@@ -34,7 +35,8 @@ import { EmailComponent } from './email/email.component';
       TabsComponent,
       TabComponent,
       SocialComponent,
-      EmailComponent
+      EmailComponent,
+      LoadingComponent
    ],
    imports: [
       BrowserModule,

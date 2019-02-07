@@ -1,10 +1,11 @@
+<app-loading (loadFinished)="onLoadFinished($event)"></app-loading>
 <div id="root">
   <div class="container">
-    <app-menu></app-menu>
-    <app-social></app-social>
-    <app-email></app-email>
+    <app-menu [fadeIn]="fadeItems"></app-menu>
+    <app-social [fadeIn]="fadeItems"></app-social>
+    <app-email [fadeIn]="fadeItems"></app-email>
     <div class="hero">
-      <app-hero id="home" class="section"></app-hero>
+      <app-hero id="home" class="section" [fadeIn]="fadeItems"></app-hero>
     </div>
     <main id="content">
       <app-about id="about" class="section"></app-about>
@@ -15,6 +16,7 @@
     </main>
   </div>
 </div>
+
 
 
 

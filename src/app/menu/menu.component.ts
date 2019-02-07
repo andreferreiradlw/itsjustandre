@@ -1,5 +1,5 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Component, OnInit, Renderer2, Input, SimpleChange, OnChanges } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
@@ -7,6 +7,15 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
   animations: [
+    trigger('fadeInDown', [
+      state('start', style({
+        transform: 'translateY(-100%)'
+      })),
+      state('end', style({
+        transform: 'translateY(0)'
+      })),
+      transition('start => end', animate('800ms 500ms cubic-bezier(0.215, 0.61, 0.355, 1)'))
+    ]),
     trigger('slideInOut', [
       state('false', style({
         transform: 'translateX(100%)'
@@ -18,12 +27,21 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
     ])
   ]
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent implements OnInit, OnChanges {
   menuOpen = false;
+  // parent inputs
+  @Input() fadeIn: string;
+  fadeInMenu = 'start';
 
   constructor(private renderer: Renderer2, private _scrollToService: ScrollToService) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+  // detect filter changes
+  ngOnChanges(changes: { [propName: string]: SimpleChange }) {
+    // if changes @Input() fadeIn = end
+    if (changes['fadeIn'].currentValue === 'end') {
+      this.fadeInMenu = changes['fadeIn'].currentValue;
+    }
   }
   onBurgerClick() {
     this.menuOpen = !this.menuOpen;
