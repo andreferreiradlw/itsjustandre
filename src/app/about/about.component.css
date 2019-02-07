@@ -1,3 +1,4 @@
+
 h3 {
   position: relative;
   display: flex;
@@ -22,7 +23,7 @@ h3::after {
   content: "";
   display: block;
   height: 2px;
-  width: 300px;
+  max-width: 300px;
   background-color: rgb(111, 111, 252);
   position: relative;
   top: 5px;
@@ -135,13 +136,12 @@ h3::after {
 }
 
 /*MEDIA SCREENS*/
-@media only screen and (min-width: 1200px) {}
-
-@media only screen and (max-width: 1199px) {}
-
-@media only screen and (max-width: 991px) {}
-
+@media only screen and (min-width: 768px) {
+}
 @media only screen and (max-width: 767px) {
+  :host {
+    padding: 80px 25px !important;
+  }
   h3 {
     font-size: 24px;
   }
@@ -169,6 +169,9 @@ h3::after {
   }
   h3::after {
     margin-left: 10px;
+  }
+  .about-content-container p {
+    font-size: 16px;
   }
   .skills-container .about-skill {
     font-size: 13px;

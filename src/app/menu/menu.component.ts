@@ -34,8 +34,11 @@ export class MenuComponent implements OnInit {
     }
   }
   onMenuOptionClick(destination: string) {
-    this.menuOpen = !this.menuOpen;
-    this.renderer.removeClass(document.body, 'blur');
+    // on logo click do not open the menu
+    if (destination !== 'home') {
+      this.menuOpen = !this.menuOpen;
+      this.renderer.removeClass(document.body, 'blur');
+    }
     // smooth scroll config
     const config: ScrollToConfigOptions = {
       target: destination,

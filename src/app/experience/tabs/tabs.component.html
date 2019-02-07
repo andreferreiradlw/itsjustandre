@@ -5,7 +5,7 @@
 <ng-content></ng-content>
 -->
 <div class="experience-tabs">
-  <a class="tab" *ngFor="let tab of tabs" (click)="selectTab(tab)">{{ tab.tabTitle }}</a>
+  <a class="tab" *ngFor="let tab of tabs" (click)="selectTab(tab)" [ngClass]="tab.active ? 'active' : 'not-active'">{{ tab.tabTitle }}</a>
 </div>
 <div class="jobs-container">
   <ng-content></ng-content>

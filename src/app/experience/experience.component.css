@@ -22,16 +22,16 @@ h3::after {
   content: "";
   display: block;
   height: 2px;
-  width: 300px;
+  max-width: 300px;
   background-color: rgb(111, 111, 252);
   position: relative;
   top: 5px;
   margin-left: 20px;
 }
+
 .job-title {
-  color: black;
   font-size: 22px;
-  margin-bottom: 5px;
+  margin: 0 0 5px;
 }
 .job-company {
   color: rgb(111, 111, 252);
@@ -64,7 +64,7 @@ h3::after {
   margin: 10px 0 20px;
 }
 .tab-content ul {
-  font-size: 18px;
+  font-size: 17px;
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -107,7 +107,7 @@ h3::after {
 @media only screen and (max-width: 479px) {
   :host {
     padding-top: 80px !important;
-    padding-bottom: 60px !important;
+    padding-bottom: 20px !important;
   }
   h3 {
     font-size: 18px;
