@@ -1,8 +1,11 @@
 h3 {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 100%;
   white-space: nowrap;
   font-size: 36px;
@@ -43,6 +46,8 @@ h3::after {
   position: relative;
   cursor: pointer;
   text-decoration: none;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .job-company a::after {
@@ -52,6 +57,8 @@ h3::after {
   height: 2px;
   position: relative;
   background-color: rgb(111, 111, 252);
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .job-company a:hover::after {
@@ -84,11 +91,6 @@ h3::after {
   line-height: 20px;
 }
 /*MEDIA SCREENS*/
-@media only screen and (min-width: 1200px) {}
-
-@media only screen and (max-width: 1199px) {}
-
-@media only screen and (max-width: 991px) {}
 
 @media only screen and (max-width: 767px) {
   h3 {

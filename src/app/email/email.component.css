@@ -10,10 +10,16 @@
   margin: 0px auto;
 }
 .email-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   position: relative;
 }
 .email-container::after {
@@ -28,7 +34,8 @@
   font-size: 12px;
   letter-spacing: 3.7px;
   -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   margin: 20px auto 0;
   padding: 10px 10px 10px 14px;
   font-weight: 700;

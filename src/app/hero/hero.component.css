@@ -50,21 +50,21 @@ h2 {
   border-width: 1px;
   border-style: solid;
   border-color: rgb(111, 111, 252);
-  border-image: initial;
+  -webkit-border-image: initial;
+       -o-border-image: initial;
+          border-image: initial;
   border-radius: 2px;
   padding: 18px 23px;
   text-decoration: none;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .hero-email:hover {
   background-color: rgb(111, 111, 252);
 }
 
-
-
-
 /*MEDIA SCREENS*/
-@media only screen and (max-width: 479px) {}
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   h5 {

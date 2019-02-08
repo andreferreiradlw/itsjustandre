@@ -1,9 +1,11 @@
-
 h3 {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 100%;
   white-space: nowrap;
   font-size: 36px;
@@ -31,11 +33,15 @@ h3::after {
   margin-left: 20px;
 }
 .about-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -webkit-box-align: center;
-  align-items: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 .about-content-container {
   width: 60%;
@@ -52,6 +58,8 @@ h3::after {
   color: rgb(111, 111, 252);
   font-weight: 700;
   text-decoration: none;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .about-content-container a::after {
@@ -61,13 +69,17 @@ h3::after {
   height: 2px;
   position: relative;
   background-color: rgb(111, 111, 252);
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .about-content-container a:hover::after {
   width: 100%;
 }
 .skills-container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: minmax(140px, 200px) minmax(140px, 200px);
   grid-template-columns: minmax(140px, 200px) minmax(140px, 200px);
   margin-top: 20px;
   overflow: hidden;
@@ -111,6 +123,8 @@ h3::after {
   height: 100%;
   border: 3px solid rgb(111, 111, 252);
   border-radius: 5px;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .about-avatar-container:hover::before {
@@ -118,12 +132,16 @@ h3::after {
   left: 3%;
 }
 .about-avatar {
-  filter: grayscale(100%) contrast(1);
+  -webkit-filter: grayscale(100%) contrast(1);
+          filter: grayscale(100%) contrast(1);
   border-radius: 5px;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .about-avatar:hover {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 .about-avatar img {
   position: absolute;
@@ -131,8 +149,10 @@ h3::after {
   left: 0px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   border-radius: 5px;
 }
 
