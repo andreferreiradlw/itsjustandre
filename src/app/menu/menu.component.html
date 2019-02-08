@@ -1,7 +1,12 @@
 <header [@fadeInDown]="fadeIn">
   <nav>
     <div class="header-logo" (click)="onMenuOptionClick('home')">
-      SVG Logo
+      <a (click)="onMenuOptionClick('home')" class="header-logo-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.9 566.9">
+          <title>Andre Ferreira</title>
+          <path class="a" d="M475.6,386.5c-2.9,7.1-8.5,11.6-14.9,11.6l-150.8-1.7V536.6H280.5V396.1l-191-2.2,16.3-28,174.7,1.6V234.8c0-11.6,7.6-21.1,17-21.1h63.3l-22.9-41.6-58.1-104L218.5,172.6l-27.9-.2,14-24.4h.1L266,39.3l.6-1.1a16.1,16.1,0,0,1,7.6-6.6,9.4,9.4,0,0,1,1.5-.6l1.5-.4,2.4-.3,3,.2,1.4.4h.2l3.4,1.7,1.7,1.1,1.6,1.6,1.1,1.3a10.1,10.1,0,0,1,1.4,2.1h.1l60.4,108.7,36.8,66.2h49.7v28.1H309.9v126l137,1.4-55.8-99.7h30.2l52.8,94.8A25.1,25.1,0,0,1,475.6,386.5Z"/>
+        </svg>
+      </a>
     </div>
     <div>
       <div class="header-burger" (click)="onBurgerClick()">

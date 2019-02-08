@@ -19,7 +19,7 @@ import { trigger, state, style, animate, transition, animateChild, query } from 
         offset: 1
       })),
       transition('start => end', [
-        animate('300ms 1500ms ease-out'),
+        animate('300ms 2500ms ease-out'),
         query('@zoomOut', [
           animateChild()
         ])
@@ -57,7 +57,7 @@ export class LoadingComponent implements OnInit, AfterViewInit {
       setTimeout(() => {
         this.renderer.removeClass(document.body, 'no-scroll');
         this.loadFinished.emit(true);
-      }, 1800);
+      }, 2500);
     }, 200);
   }
 }

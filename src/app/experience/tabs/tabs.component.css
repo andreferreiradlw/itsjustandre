@@ -28,7 +28,7 @@
   font-weight: 700;
 }
 .active {
-  background-color: black;
+  background-color: rgb(194, 246, 255);
   color: rgb(111, 111, 252);
   border-left: 3px solid rgb(111, 111, 252);
 }
@@ -38,8 +38,8 @@
   border-left: 3px solid black;
 }
 .not-active:hover {
-  background-color: black;
-  color: white;
+  background-color: rgb(194, 246, 255);
+  color: rgb(111, 111, 252);
   border-left: 3px solid rgb(111, 111, 252);
 }
 .jobs-container {

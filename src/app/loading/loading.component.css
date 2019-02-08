@@ -17,19 +17,27 @@
   display: block;
 }
 .path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
+  stroke-dasharray: 2555;
+  stroke-dashoffset: 2555;
 }
 .animate-path {
-  animation: dash 1.8s cubic-bezier(0.645, 0.045, 0.355, 1) 0ms 1 normal forwards;
+  animation: dash 2.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0ms 1 normal forwards;
 }
 /*dash animation*/
 @keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
+  0% {
+    stroke-dashoffset: 2555;
+    fill: white;
   }
-  to {
+  70% {
     stroke-dashoffset: 0;
+    fill: white;
+    stroke-width: 7;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: black;
+    stroke-width: 4;
   }
 }
 /*zoom out animation*/
