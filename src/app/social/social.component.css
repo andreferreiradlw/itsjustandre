@@ -34,6 +34,11 @@
   fill: currentcolor;
   vertical-align: middle;
 }
+.social-item-list svg:hover {
+  transform: translateY(-2px);
+  width: 20px;
+  height: 20px;
+}
 
 @media only screen and (max-width: 1199px) {
   :host {

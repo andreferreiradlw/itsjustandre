@@ -9,14 +9,12 @@ import { trigger, state, style, animate, transition, animateChild, query } from 
     trigger('fadeOut', [
       state('start', style({
         display: 'flex',
-        opacity: 1,
-        offset: 0
+        opacity: 1
       })),
       state('end', style({
         display: 'none',
         visibility: 'hidden',
-        opacity: 0,
-        offset: 1
+        opacity: 0
       })),
       transition('start => end', [
         animate('300ms 2500ms ease-out'),

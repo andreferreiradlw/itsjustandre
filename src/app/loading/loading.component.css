@@ -39,15 +39,10 @@
     stroke-dashoffset: 2555;
     fill: white;
   }
-  70% {
-    stroke-dashoffset: 0;
-    fill: white;
-    stroke-width: 7;
-  }
   100% {
     stroke-dashoffset: 0;
     fill: black;
-    stroke-width: 4;
+    stroke-width: 2;
   }
 }
 @keyframes dash {
