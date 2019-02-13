@@ -11,5 +11,8 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
   }
+  openNewTab(link: string) {
+    window.open(link, '_blank');
+  }
 
 }

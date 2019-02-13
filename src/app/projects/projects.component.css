@@ -95,6 +95,12 @@ h3::after {
   font-weight: 600;
   color: black;
   margin: 0px 0px 20px;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.featured-name:hover {
+  color: rgb(111, 111, 252);
 }
 .featured-description {
   background-color: black;
@@ -165,6 +171,9 @@ h3::after {
   vertical-align: middle;
   position: relative;
   border-radius: 2px;
+}
+.featured-image:hover {
+  cursor: pointer;
 }
 .featured-image img {
   position: absolute;
