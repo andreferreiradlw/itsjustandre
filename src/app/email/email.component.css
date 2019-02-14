@@ -31,14 +31,21 @@
   margin: 0px auto;
 }
 .email-link {
-  font-size: 12px;
-  letter-spacing: 3.7px;
+  font-size: 15px;
+  letter-spacing: 1px;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
   margin: 20px auto 0;
   padding: 10px 10px 10px 14px;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.email-link:hover {
+  transform: translateY(-10px);
 }
 
 @media only screen and (max-width: 1199px) {
