@@ -1,6 +1,5 @@
 language: node_js
-node_js:
-  - "9"
+node_js: stable
 dist: trusty
 sudo: required
 branches:
@@ -10,3 +9,10 @@ before_script:
   - npm install -g @angular/cli
 script:
   - ng build --prod
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/itsjustandre
+  on:
+    branch: master
