@@ -46,7 +46,16 @@ jobs:
             git config user.name "andreferreiradlw"
       - run:
           name: Deploy to gh-pages branch
-          command: gh-pages --message "[ci skip]" -d dist
+          command: gh-pages --message "[ci skip] deploy" -d dist
+      - run:
+          name: Fix disappearing CNAME
+          command: |
+            git checkout gh-pages
+            git pull
+            echo andreferreira.tech > CNAME
+            git add CNAME
+            git commit -m '[ci skip] add cname'
+            git push
 
 workflows:
   version: 2
